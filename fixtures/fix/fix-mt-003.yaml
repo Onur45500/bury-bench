@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: fix-mt-003
+category: fix
+turns:
+  - role: user
+    content: Rust E0502 borrow error in main.rs.
+  - role: assistant
+    content: |
+      Step 2 of 3 done: cloned the value before mutable insert.
+prompt: |
+  next
+notes: >
+  Borrow-checker multi-turn.

@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-001
+category: debug
+prompt: |
+  Traceback (most recent call last):
+    File "app.py", line 42, in <module>
+      main()
+    File "app.py", line 28, in main
+      user = get_user(session)
+    File "auth.py", line 15, in get_user
+      return session["user"].email
+  KeyError: 'user'
+  
+  What's wrong here?
+notes: >
+  KeyError on session lookup — classic missing-login path.

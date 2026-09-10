@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: install-009
+category: install
+prompt: |
+  How do I install `jq` with Homebrew and confirm the version?
+notes: >
+  brew install jq.

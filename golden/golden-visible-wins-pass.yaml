@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT
+id: golden-visible-wins-pass
+ruleset: adhd-v2
+turns:
+  - role: assistant
+    content: I've fixed the auth header check in the middleware.
+response: |
+  Login now works with magic links. Try: `npm run dev`, open `/login`.
+expected:
+  visible_wins: passed
+notes: >
+  Concrete visible win after completion.

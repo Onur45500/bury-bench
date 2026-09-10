@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: install-mt-005
+category: install
+turns:
+  - role: user
+    content: Install PostgreSQL 16 on Ubuntu.
+  - role: assistant
+    content: |
+      Step 2 of 3 done: packages installed. Next: create role.
+prompt: |
+  create bury_bench db
+notes: >
+  Postgres install multi-turn.

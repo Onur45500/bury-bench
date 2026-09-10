@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: install-mt-003
+category: install
+turns:
+  - role: user
+    content: Install Poetry deps for this repo.
+  - role: assistant
+    content: |
+      Step 1 of 2 done: `poetry install` finished.
+prompt: |
+  how do I activate the env?
+notes: >
+  Poetry install continuation.

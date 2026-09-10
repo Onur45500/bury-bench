@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: debug-mt-001
+category: debug
+turns:
+  - role: user
+    content: |
+      Migration failed. Help me fix the schema.
+  - role: assistant
+    content: |
+      Step 1 of 4 done: added nullable column `email_verified`.
+      Next: backfill existing rows.
+prompt: |
+  continue with the next step
+notes: >
+  Multi-turn state restatement for schema migration.

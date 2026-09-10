@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: install-003
+category: install
+prompt: |
+  How do I install Docker Desktop on Windows 11 and confirm `docker run hello-world` works?
+notes: >
+  Windows Docker Desktop install.

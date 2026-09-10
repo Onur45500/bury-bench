@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: fix-014
+category: fix
+prompt: |
+  Go vet: printf-style function with wrong arg count. How do I fix it?
+notes: >
+  Extra V2 corpus fixture.

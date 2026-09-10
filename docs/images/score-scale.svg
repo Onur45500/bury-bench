@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 200" role="img" aria-labelledby="title desc">
+  <title id="title">Action score scale</title>
+  <desc id="desc">Bands from 0 buried to 100 actionable.</desc>
+  <defs>
+    <linearGradient id="scale" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="25%" stop-color="#f97316"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="75%" stop-color="#84cc16"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="200" rx="16" fill="#0f172a"/>
+  <text x="32" y="36" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Action score scale</text>
+  <text x="32" y="56" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12">Higher = less buried. N/A rules do not lower the score.</text>
+
+  <rect x="32" y="84" width="896" height="36" rx="8" fill="url(#scale)"/>
+  <text x="40" y="108" fill="#0f172a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="700">0</text>
+  <text x="900" y="108" text-anchor="end" fill="#0f172a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="700">100</text>
+
+  <text x="100" y="148" text-anchor="middle" fill="#fca5a5" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">0-19</text>
+  <text x="100" y="166" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Heavily buried</text>
+
+  <text x="300" y="148" text-anchor="middle" fill="#fdba74" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">20-49</text>
+  <text x="300" y="166" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Many burial patterns</text>
+
+  <text x="520" y="148" text-anchor="middle" fill="#fde047" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">50-79</text>
+  <text x="520" y="166" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Usable, some misses</text>
+
+  <text x="780" y="148" text-anchor="middle" fill="#86efac" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">80-100</text>
+  <text x="780" y="166" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Mostly actionable</text>
+</svg>

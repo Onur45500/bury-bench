@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: fix-013
+category: fix
+prompt: |
+  eslint: 'foo' is assigned a value but never used. Fix without deleting needed code.
+notes: >
+  Extra V2 corpus fixture.

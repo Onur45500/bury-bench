@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: install-008
+category: install
+prompt: |
+  I have `@playwright/test` in package.json. How do I install the browser binaries?
+notes: >
+  npx playwright install.

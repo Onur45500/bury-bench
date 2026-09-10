@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+id: golden-restate-fail
+ruleset: adhd-v2
+turns:
+  - role: assistant
+    content: |
+      Step 2 of 4 done: schema updated in `migrations/002_email.sql`.
+response: |
+  Done. Ready for the next part?
+expected:
+  restate_state: failed
+notes: >
+  Classic burial of prior step state.

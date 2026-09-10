@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: ambiguous-mt-001
+category: ambiguous
+turns:
+  - role: user
+    content: Make it faster.
+  - role: assistant
+    content: |
+      Step 1 of 2 done: clarified we need a target metric.
+prompt: |
+  I mean the checkout page
+notes: >
+  Ambiguity partially resolved; restate what was clarified.

@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: explain-002
+category: explain
+prompt: |
+  Walk me through what a CORS preflight request does and which headers matter.
+notes: >
+  Explain-mode fixture — body may be longer; still no preamble/closer.

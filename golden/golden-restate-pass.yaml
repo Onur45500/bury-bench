@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT
+id: golden-restate-pass
+ruleset: adhd-v2
+turns:
+  - role: user
+    content: continue the migration
+  - role: assistant
+    content: |
+      Step 2 of 4 done: schema updated in `migrations/002_email.sql`.
+prompt_ignored: true
+response: |
+  Step 2 of 4 done: schema updated. Next: run `python backfill.py`.
+expected:
+  restate_state: passed
+notes: >
+  Multi-turn restatement success.

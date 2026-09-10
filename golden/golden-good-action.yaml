@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT
+id: golden-good-action
+ruleset: adhd-v2
+response: |
+  Run `pip install fastapi`.
+
+  1. Create a virtualenv
+  2. Install fastapi and uvicorn
+  3. Run `uvicorn main:app --reload`
+
+  Next: open http://127.0.0.1:8000/docs.
+expected:
+  action_first: passed
+  numbered_steps: passed
+  no_preamble: passed
+  no_closer: passed
+  no_idiom: passed
+  restate_state: not_applicable
+  visible_wins: not_applicable
+notes: >
+  Clean single-turn install answer.

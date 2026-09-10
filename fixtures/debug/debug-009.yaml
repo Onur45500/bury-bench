@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-009
+category: debug
+prompt: |
+  Error: listen EADDRINUSE: address already in use :::3000
+  
+  How do I free the port?
+notes: >
+  Node server port conflict.

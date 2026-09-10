@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: fix-001
+category: fix
+prompt: |
+  error: Item "None" of "User | None" has no attribute "email"  [union-attr]
+      user.email
+      ^~~~~~~~~~
+  
+  How do I fix this type error?
+context: |
+  src/handlers.py:18
+notes: >
+  Need None guard before attribute access.

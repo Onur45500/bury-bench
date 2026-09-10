@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: fix-mt-004
+category: fix
+turns:
+  - role: user
+    content: Django CSRF 403 on fetch POST.
+  - role: assistant
+    content: I've added the CSRF header to the fetch call.
+prompt: |
+  how do I verify?
+notes: >
+  Visible verification step after CSRF fix.

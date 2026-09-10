@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: install-012
+category: install
+prompt: |
+  How do I install Astral's `uv` and use it to create a Python 3.12 project?
+notes: >
+  uv install + init.

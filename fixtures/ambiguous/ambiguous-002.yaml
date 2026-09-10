@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: ambiguous-002
+category: ambiguous
+prompt: |
+  This doesn't work.
+notes: >
+  Ambiguous request — good agents ask one clarifying question instead of guessing.

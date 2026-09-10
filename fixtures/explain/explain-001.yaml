@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: explain-001
+category: explain
+prompt: |
+  Explain how Python virtualenvs isolate packages and when to recreate one.
+notes: >
+  Explain-mode fixture — body may be longer; still no preamble/closer.

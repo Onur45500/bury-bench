@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: install-007
+category: install
+prompt: |
+  How do I install rustup and verify `cargo --version` on Linux?
+notes: >
+  rustup install.

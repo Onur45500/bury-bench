@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT
+id: golden-visible-wins-fail
+ruleset: adhd-v2
+turns:
+  - role: assistant
+    content: I've fixed the auth header check in the middleware.
+response: |
+  I've made some changes to the auth flow. Among other things it should be better.
+expected:
+  visible_wins: failed
+notes: >
+  Buried recap without concrete win.

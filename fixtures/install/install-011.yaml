@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: install-011
+category: install
+prompt: |
+  How do I install Terraform 1.9 on Linux using the HashiCorp apt repo?
+notes: >
+  Official terraform apt install.

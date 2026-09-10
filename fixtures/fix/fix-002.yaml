@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: fix-002
+category: fix
+prompt: |
+  src/api.ts:44:5 - error TS2322: Type 'string | undefined' is not assignable
+  to type 'string'.
+    Type 'undefined' is not assignable to type 'string'.
+  
+      44     headers.Authorization = token;
+             ~~~~~~~~~~~~~~~~~~~~~
+  
+  Fix this TypeScript error.
+notes: >
+  Narrow string | undefined before assign.

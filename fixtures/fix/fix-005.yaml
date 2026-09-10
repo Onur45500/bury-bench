@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: fix-005
+category: fix
+prompt: |
+  ./main.go:12:2: declared and not used: err
+  
+  How do I fix this compile error?
+notes: >
+  Go unused err — handle or blank-ident.

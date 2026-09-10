@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: debug-014
+category: debug
+prompt: |
+  Kubernetes CrashLoopBackOff on api-deploy. How do I diagnose?
+notes: >
+  Extra V2 corpus fixture.

@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-008
+category: debug
+prompt: |
+  <<<<<<< HEAD
+  def authenticate(token: str) -> User:
+  =======
+  def authenticate(token: str | None) -> User | None:
+  >>>>>>> feature/optional-token
+  
+  The app crashes on import. What's wrong?
+context: |
+  src/auth.py
+notes: >
+  Unresolved merge conflict markers.

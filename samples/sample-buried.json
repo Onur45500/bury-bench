@@ -1,0 +1,459 @@
+{
+  "model": "sample-buried",
+  "provider": "openai",
+  "ruleset": "adhd-v2",
+  "timestamp": "2026-09-10T00:00:00+00:00",
+  "fixtures": [
+    {
+      "id": "debug-001",
+      "category": "debug",
+      "response_text": "Great question! Let me think about this carefully.\n\nFirst maybe look at the logs, then perhaps restart after that circle back.\n\nBy the way, your README is stale.\n\nHope this helps! Let me know if you need anything else.\n",
+      "score": 9.8,
+      "rules": [
+        {
+          "name": "action_first",
+          "status": "failed",
+          "evidence": "Great question! Let me think about this carefully.",
+          "weight": 1.5
+        },
+        {
+          "name": "numbered_steps",
+          "status": "failed",
+          "evidence": "First, then, after that",
+          "weight": 1.0
+        },
+        {
+          "name": "one_next_action",
+          "status": "failed",
+          "evidence": "Hope this helps! Let me know if you need anything else.",
+          "weight": 1.2
+        },
+        {
+          "name": "no_tangent",
+          "status": "failed",
+          "evidence": "By the way",
+          "weight": 1.0
+        },
+        {
+          "name": "time_estimate",
+          "status": "not_applicable",
+          "evidence": "no estimate language",
+          "weight": 0.8
+        },
+        {
+          "name": "error_tone",
+          "status": "passed",
+          "evidence": null,
+          "weight": 1.0
+        },
+        {
+          "name": "capped_lists",
+          "status": "not_applicable",
+          "evidence": "no markdown lists",
+          "weight": 1.0
+        },
+        {
+          "name": "no_preamble",
+          "status": "failed",
+          "evidence": "Great question",
+          "weight": 1.5
+        },
+        {
+          "name": "no_closer",
+          "status": "failed",
+          "evidence": "Let me know if you need",
+          "weight": 1.2
+        },
+        {
+          "name": "no_hedge_filler",
+          "status": "failed",
+          "evidence": "2 hedges / 39 words (5.1/100 > 1.0): perhaps, maybe",
+          "weight": 1.0
+        },
+        {
+          "name": "no_idiom",
+          "status": "failed",
+          "evidence": "circle back",
+          "weight": 0.8
+        },
+        {
+          "name": "restate_state",
+          "status": "not_applicable",
+          "evidence": "single-turn; multi-turn context required",
+          "weight": 1.3
+        },
+        {
+          "name": "visible_wins",
+          "status": "not_applicable",
+          "evidence": "single-turn; multi-turn context required",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "id": "install-001",
+      "category": "install",
+      "response_text": "Great question! Let me think about this carefully.\n\nFirst maybe look at the logs, then perhaps restart after that circle back.\n\nBy the way, your README is stale.\n\nHope this helps! Let me know if you need anything else.\n",
+      "score": 9.8,
+      "rules": [
+        {
+          "name": "action_first",
+          "status": "failed",
+          "evidence": "Great question! Let me think about this carefully.",
+          "weight": 1.5
+        },
+        {
+          "name": "numbered_steps",
+          "status": "failed",
+          "evidence": "First, then, after that",
+          "weight": 1.0
+        },
+        {
+          "name": "one_next_action",
+          "status": "failed",
+          "evidence": "Hope this helps! Let me know if you need anything else.",
+          "weight": 1.2
+        },
+        {
+          "name": "no_tangent",
+          "status": "failed",
+          "evidence": "By the way",
+          "weight": 1.0
+        },
+        {
+          "name": "time_estimate",
+          "status": "not_applicable",
+          "evidence": "no estimate language",
+          "weight": 0.8
+        },
+        {
+          "name": "error_tone",
+          "status": "passed",
+          "evidence": null,
+          "weight": 1.0
+        },
+        {
+          "name": "capped_lists",
+          "status": "not_applicable",
+          "evidence": "no markdown lists",
+          "weight": 1.0
+        },
+        {
+          "name": "no_preamble",
+          "status": "failed",
+          "evidence": "Great question",
+          "weight": 1.5
+        },
+        {
+          "name": "no_closer",
+          "status": "failed",
+          "evidence": "Let me know if you need",
+          "weight": 1.2
+        },
+        {
+          "name": "no_hedge_filler",
+          "status": "failed",
+          "evidence": "2 hedges / 39 words (5.1/100 > 1.0): perhaps, maybe",
+          "weight": 1.0
+        },
+        {
+          "name": "no_idiom",
+          "status": "failed",
+          "evidence": "circle back",
+          "weight": 0.8
+        },
+        {
+          "name": "restate_state",
+          "status": "not_applicable",
+          "evidence": "single-turn; multi-turn context required",
+          "weight": 1.3
+        },
+        {
+          "name": "visible_wins",
+          "status": "not_applicable",
+          "evidence": "single-turn; multi-turn context required",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "id": "fix-001",
+      "category": "fix",
+      "response_text": "Great question! Let me think about this carefully.\n\nFirst maybe look at the logs, then perhaps restart after that circle back.\n\nBy the way, your README is stale.\n\nHope this helps! Let me know if you need anything else.\n",
+      "score": 9.8,
+      "rules": [
+        {
+          "name": "action_first",
+          "status": "failed",
+          "evidence": "Great question! Let me think about this carefully.",
+          "weight": 1.5
+        },
+        {
+          "name": "numbered_steps",
+          "status": "failed",
+          "evidence": "First, then, after that",
+          "weight": 1.0
+        },
+        {
+          "name": "one_next_action",
+          "status": "failed",
+          "evidence": "Hope this helps! Let me know if you need anything else.",
+          "weight": 1.2
+        },
+        {
+          "name": "no_tangent",
+          "status": "failed",
+          "evidence": "By the way",
+          "weight": 1.0
+        },
+        {
+          "name": "time_estimate",
+          "status": "not_applicable",
+          "evidence": "no estimate language",
+          "weight": 0.8
+        },
+        {
+          "name": "error_tone",
+          "status": "passed",
+          "evidence": null,
+          "weight": 1.0
+        },
+        {
+          "name": "capped_lists",
+          "status": "not_applicable",
+          "evidence": "no markdown lists",
+          "weight": 1.0
+        },
+        {
+          "name": "no_preamble",
+          "status": "failed",
+          "evidence": "Great question",
+          "weight": 1.5
+        },
+        {
+          "name": "no_closer",
+          "status": "failed",
+          "evidence": "Let me know if you need",
+          "weight": 1.2
+        },
+        {
+          "name": "no_hedge_filler",
+          "status": "failed",
+          "evidence": "2 hedges / 39 words (5.1/100 > 1.0): perhaps, maybe",
+          "weight": 1.0
+        },
+        {
+          "name": "no_idiom",
+          "status": "failed",
+          "evidence": "circle back",
+          "weight": 0.8
+        },
+        {
+          "name": "restate_state",
+          "status": "not_applicable",
+          "evidence": "single-turn; multi-turn context required",
+          "weight": 1.3
+        },
+        {
+          "name": "visible_wins",
+          "status": "not_applicable",
+          "evidence": "single-turn; multi-turn context required",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "id": "ambiguous-001",
+      "category": "ambiguous",
+      "response_text": "Great question! Let me think about this carefully.\n\nFirst maybe look at the logs, then perhaps restart after that circle back.\n\nBy the way, your README is stale.\n\nHope this helps! Let me know if you need anything else.\n",
+      "score": 9.8,
+      "rules": [
+        {
+          "name": "action_first",
+          "status": "failed",
+          "evidence": "Great question! Let me think about this carefully.",
+          "weight": 1.5
+        },
+        {
+          "name": "numbered_steps",
+          "status": "failed",
+          "evidence": "First, then, after that",
+          "weight": 1.0
+        },
+        {
+          "name": "one_next_action",
+          "status": "failed",
+          "evidence": "Hope this helps! Let me know if you need anything else.",
+          "weight": 1.2
+        },
+        {
+          "name": "no_tangent",
+          "status": "failed",
+          "evidence": "By the way",
+          "weight": 1.0
+        },
+        {
+          "name": "time_estimate",
+          "status": "not_applicable",
+          "evidence": "no estimate language",
+          "weight": 0.8
+        },
+        {
+          "name": "error_tone",
+          "status": "passed",
+          "evidence": null,
+          "weight": 1.0
+        },
+        {
+          "name": "capped_lists",
+          "status": "not_applicable",
+          "evidence": "no markdown lists",
+          "weight": 1.0
+        },
+        {
+          "name": "no_preamble",
+          "status": "failed",
+          "evidence": "Great question",
+          "weight": 1.5
+        },
+        {
+          "name": "no_closer",
+          "status": "failed",
+          "evidence": "Let me know if you need",
+          "weight": 1.2
+        },
+        {
+          "name": "no_hedge_filler",
+          "status": "failed",
+          "evidence": "2 hedges / 39 words (5.1/100 > 1.0): perhaps, maybe",
+          "weight": 1.0
+        },
+        {
+          "name": "no_idiom",
+          "status": "failed",
+          "evidence": "circle back",
+          "weight": 0.8
+        },
+        {
+          "name": "restate_state",
+          "status": "not_applicable",
+          "evidence": "single-turn; multi-turn context required",
+          "weight": 1.3
+        },
+        {
+          "name": "visible_wins",
+          "status": "not_applicable",
+          "evidence": "single-turn; multi-turn context required",
+          "weight": 1.2
+        }
+      ]
+    },
+    {
+      "id": "debug-mt-001",
+      "category": "debug",
+      "response_text": "Done. Ready for the next part?",
+      "score": 61.9,
+      "rules": [
+        {
+          "name": "action_first",
+          "status": "failed",
+          "evidence": "Done. Ready for the next part?",
+          "weight": 1.5
+        },
+        {
+          "name": "numbered_steps",
+          "status": "not_applicable",
+          "evidence": "no multi-step sequence detected",
+          "weight": 1.0
+        },
+        {
+          "name": "one_next_action",
+          "status": "not_applicable",
+          "evidence": "closed-form ending",
+          "weight": 1.2
+        },
+        {
+          "name": "no_tangent",
+          "status": "passed",
+          "evidence": null,
+          "weight": 1.0
+        },
+        {
+          "name": "time_estimate",
+          "status": "not_applicable",
+          "evidence": "no estimate language",
+          "weight": 0.8
+        },
+        {
+          "name": "error_tone",
+          "status": "passed",
+          "evidence": null,
+          "weight": 1.0
+        },
+        {
+          "name": "capped_lists",
+          "status": "not_applicable",
+          "evidence": "no markdown lists",
+          "weight": 1.0
+        },
+        {
+          "name": "no_preamble",
+          "status": "passed",
+          "evidence": null,
+          "weight": 1.5
+        },
+        {
+          "name": "no_closer",
+          "status": "passed",
+          "evidence": null,
+          "weight": 1.2
+        },
+        {
+          "name": "no_hedge_filler",
+          "status": "passed",
+          "evidence": null,
+          "weight": 1.0
+        },
+        {
+          "name": "no_idiom",
+          "status": "passed",
+          "evidence": null,
+          "weight": 0.8
+        },
+        {
+          "name": "restate_state",
+          "status": "failed",
+          "evidence": "prior state 'Step 2 of 4' not restated",
+          "weight": 1.3
+        },
+        {
+          "name": "visible_wins",
+          "status": "failed",
+          "evidence": "completion claimed earlier but win not made visible",
+          "weight": 1.2
+        }
+      ]
+    }
+  ],
+  "aggregate": {
+    "overall": 20.22,
+    "per_category": {
+      "ambiguous": 9.8,
+      "debug": 35.85,
+      "fix": 9.8,
+      "install": 9.8
+    },
+    "per_rule_fail_counts": {
+      "action_first": 5,
+      "numbered_steps": 4,
+      "one_next_action": 4,
+      "no_tangent": 4,
+      "no_preamble": 4,
+      "no_closer": 4,
+      "no_hedge_filler": 4,
+      "no_idiom": 4,
+      "restate_state": 1,
+      "visible_wins": 1
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: install-005
+category: install
+prompt: |
+  How do I install Node 20 with nvm on macOS/Linux and set it as default?
+notes: >
+  nvm install/use default.

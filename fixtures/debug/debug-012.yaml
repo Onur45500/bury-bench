@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-012
+category: debug
+prompt: |
+  psycopg2.errors.UniqueViolation: duplicate key value violates unique
+  constraint "bookings_tenant_id_slot_id_key"
+  DETAIL: Key (tenant_id, slot_id)=(a1, s9) already exists.
+  
+  What's wrong and how do I prevent it?
+notes: >
+  Race on double-booking without atomic check.

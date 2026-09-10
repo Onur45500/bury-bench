@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-011
+category: debug
+prompt: |
+  Warning: Text content did not match. Server: "Loading..." Client: "Welcome, Ada"
+      at p
+      at HomePage
+  
+  What causes this hydration warning?
+notes: >
+  SSR/client content mismatch in Next/React.

@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: fix-010
+category: fix
+prompt: |
+  PrismaClientKnownRequestError:
+  Invalid `prisma.user.create()` invocation:
+  Unique constraint failed on the fields: (`email`)
+  
+  How do I handle this cleanly?
+notes: >
+  Catch P2002 / upsert pattern.

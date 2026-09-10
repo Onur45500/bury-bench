@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: install-006
+category: install
+prompt: |
+  How do I install PostgreSQL 16 on Ubuntu and create a database named bury_bench?
+notes: >
+  apt install postgres + createdb.

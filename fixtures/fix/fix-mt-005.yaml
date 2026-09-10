@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: fix-mt-005
+category: fix
+turns:
+  - role: user
+    content: Prisma P2002 unique on email.
+  - role: assistant
+    content: I've added upsert on email in the register path.
+prompt: |
+  show me how to confirm
+notes: >
+  Visible confirmation after Prisma fix.

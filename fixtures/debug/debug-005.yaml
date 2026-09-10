@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-005
+category: debug
+prompt: |
+  sqlalchemy.orm.exc.DetachedInstanceError: Instance <User at 0x7f>
+  is not bound to a Session; attribute refresh operation cannot proceed
+  
+  What causes this?
+notes: >
+  Accessing ORM attrs after session closed.

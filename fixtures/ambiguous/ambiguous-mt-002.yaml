@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: ambiguous-mt-002
+category: ambiguous
+turns:
+  - role: user
+    content: Fix the tests.
+  - role: assistant
+    content: There are unit and e2e failures. Which suite first?
+prompt: |
+  unit
+notes: >
+  Clarifying question answered; continue with chosen path.

@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: install-mt-004
+category: install
+turns:
+  - role: user
+    content: Playwright browsers missing.
+  - role: assistant
+    content: I've run `npx playwright install`. Chromium is available.
+prompt: |
+  verify with a smoke test command
+notes: >
+  Make install win visible with a concrete verify command.

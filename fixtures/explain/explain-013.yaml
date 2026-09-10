@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: explain-013
+category: explain
+prompt: |
+  Explain connection pooling and when a pool is exhausted.
+notes: >
+  Extra V2 corpus fixture.

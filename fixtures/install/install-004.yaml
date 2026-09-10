@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: install-004
+category: install
+prompt: |
+  I cloned a repo with a pyproject.toml that uses Poetry.
+  How do I install dependencies and activate the env?
+notes: >
+  Poetry install + shell.

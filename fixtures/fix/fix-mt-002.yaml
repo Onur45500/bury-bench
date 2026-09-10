@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: fix-mt-002
+category: fix
+turns:
+  - role: user
+    content: TS2322 string | undefined on Authorization header.
+  - role: assistant
+    content: I've narrowed the token before assignment in `src/api.ts`.
+prompt: |
+  confirm the fix
+notes: >
+  Restate file artifact and show what works.

@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-003
+category: debug
+prompt: |
+  npm ERR! code ERESOLVE
+  npm ERR! ERESOLVE unable to resolve dependency tree
+  npm ERR! peer react@"^18.0.0" from react-dom@18.3.1
+  npm ERR! Found: react@19.0.0
+  
+  What's going on?
+notes: >
+  Peer dependency conflict between react major versions.

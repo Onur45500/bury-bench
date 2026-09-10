@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: explain-009
+category: explain
+prompt: |
+  Explain what a race condition is using a double-booking example.
+notes: >
+  Explain-mode fixture — body may be longer; still no preamble/closer.

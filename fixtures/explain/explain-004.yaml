@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: explain-004
+category: explain
+prompt: |
+  Walk me through Postgres MVCC at a high level for an ADHD reader.
+notes: >
+  Explain-mode fixture — body may be longer; still no preamble/closer.

@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: debug-mt-002
+category: debug
+turns:
+  - role: user
+    content: The auth tests are still red.
+  - role: assistant
+    content: |
+      Step 2 of 5 done: fixed `src/auth.ts` null check.
+      Next: rerun the suite.
+prompt: |
+  still failing — what now?
+notes: >
+  Prior artifact + step progress must be restated.

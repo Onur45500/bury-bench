@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-006
+category: debug
+prompt: |
+  docker: Error response from daemon: error while creating mount source
+  path '/home/me/data': mkdir /home/me/data: permission denied.
+  
+  How do I resolve this?
+notes: >
+  Docker volume mount permission denied.

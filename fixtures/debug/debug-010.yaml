@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-010
+category: debug
+prompt: |
+  urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED]
+  certificate verify failed: unable to get local issuer certificate
+  (_ssl.c:1006)>
+  
+  What's the fix for local development?
+notes: >
+  Python SSL cert chain on local/dev machine.

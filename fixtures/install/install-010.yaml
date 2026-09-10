@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: install-010
+category: install
+prompt: |
+  How do I install the GitHub CLI (`gh`) on Windows with winget and authenticate?
+notes: >
+  winget + gh auth.

@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-004
+category: debug
+prompt: |
+  Access to fetch at 'http://localhost:8000/api/bookings' from origin
+  'http://localhost:3000' has been blocked by CORS policy: Response to
+  preflight request doesn't pass access control check: No
+  'Access-Control-Allow-Origin' header is present on the requested resource.
+  
+  Why is this failing?
+notes: >
+  Browser CORS preflight with missing ACAO header.

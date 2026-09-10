@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: explain-mt-002
+category: explain
+turns:
+  - role: user
+    content: Explain the booking transaction boundaries.
+  - role: assistant
+    content: I've outlined the read path. Among other things the write path differs.
+prompt: |
+  finish with the write path
+notes: >
+  Prior buried recap — response should make the win/structure visible.

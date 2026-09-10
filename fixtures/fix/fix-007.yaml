@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: fix-007
+category: fix
+prompt: |
+  Exception in thread "main" java.lang.NullPointerException:
+  Cannot invoke "String.length()" because "name" is null
+          at App.greet(App.java:8)
+  
+  What's the proper fix?
+notes: >
+  Null check / Objects.requireNonNull.

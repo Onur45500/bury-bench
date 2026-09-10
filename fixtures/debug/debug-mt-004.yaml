@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: debug-mt-004
+category: debug
+turns:
+  - role: user
+    content: Port 3000 is in use again.
+  - role: assistant
+    content: |
+      Step 1 of 2 done: identified pid 4421 holding :3000.
+prompt: |
+  kill it and restart
+notes: >
+  Short multi-step debug continuation.

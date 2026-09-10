@@ -1,0 +1,35 @@
+name: ci
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: pip install -e ".[dev]"
+      - name: Unit tests
+        run: pytest -q
+      - name: Golden regressions
+        run: bury-bench check-golden --golden golden
+      - name: Validate sample results
+        run: bury-bench validate-results samples
+      - name: Refresh leaderboard (deterministic samples)
+        run: bury-bench leaderboard samples --out docs/LEADERBOARD.md
+      - name: Ensure leaderboard is current
+        run: |
+          git diff --exit-code docs/LEADERBOARD.md || (
+            echo "docs/LEADERBOARD.md is stale; regenerate with:"
+            echo "  bury-bench leaderboard samples --out docs/LEADERBOARD.md"
+            exit 1
+          )

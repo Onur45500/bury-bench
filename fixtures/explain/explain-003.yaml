@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: explain-003
+category: explain
+prompt: |
+  Explain the difference between `useEffect` and `useLayoutEffect` with one example.
+notes: >
+  Explain-mode fixture — body may be longer; still no preamble/closer.

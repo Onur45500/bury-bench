@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bury-bench"
+version = "0.2.0"
+description = "Zero-LLM-judge benchmark for answer-burial in coding-agent responses"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "Onur45500" }]
+keywords = [
+    "benchmark",
+    "llm",
+    "evaluation",
+    "adhd",
+    "coding-agents",
+    "deterministic",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "typer>=0.12",
+    "pyyaml>=6.0",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+providers = ["httpx>=0.27"]
+dev = ["pytest>=8.0", "httpx>=0.27"]
+
+[project.urls]
+Homepage = "https://github.com/Onur45500/bury-bench"
+Repository = "https://github.com/Onur45500/bury-bench"
+Issues = "https://github.com/Onur45500/bury-bench/issues"
+Changelog = "https://github.com/Onur45500/bury-bench/blob/main/CHANGELOG.md"
+
+[project.scripts]
+bury-bench = "burybench.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["burybench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

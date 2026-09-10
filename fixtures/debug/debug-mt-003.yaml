@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: debug-mt-003
+category: debug
+turns:
+  - role: user
+    content: Did the CORS fix land?
+  - role: assistant
+    content: I've updated the middleware and added the ACAO header.
+prompt: |
+  confirm what works now
+notes: >
+  Visible win after completion claim.

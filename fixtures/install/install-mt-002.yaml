@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: install-mt-002
+category: install
+turns:
+  - role: user
+    content: Need Node 20 via nvm.
+  - role: assistant
+    content: I've installed nvm and Node 20. You can now run `node -v`.
+prompt: |
+  set it as default
+notes: >
+  Visible win already present in prior; next action continues.

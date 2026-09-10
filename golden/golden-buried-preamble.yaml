@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT
+id: golden-buried-preamble
+ruleset: adhd-v2
+response: |
+  Great question! Let me think about this carefully.
+
+  First maybe look at the logs, then perhaps restart after that circle back.
+
+  By the way, your README is stale.
+
+  Hope this helps! Let me know if you need anything else.
+expected:
+  action_first: failed
+  no_preamble: failed
+  no_closer: failed
+  no_tangent: failed
+  no_idiom: failed
+  numbered_steps: failed
+notes: >
+  Deliberately buried answer — regression anchor for preamble/closer/idiom.

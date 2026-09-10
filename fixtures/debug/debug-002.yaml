@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: debug-002
+category: debug
+prompt: |
+  Traceback (most recent call last):
+    File "/app/main.py", line 1, in <module>
+      import fastapi
+  ModuleNotFoundError: No module named 'fastapi'
+  
+  How do I fix this?
+notes: >
+  Missing package import error.

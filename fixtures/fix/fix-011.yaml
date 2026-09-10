@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: fix-011
+category: fix
+prompt: |
+  Fatal error: Unexpectedly found nil while unwrapping an Optional value
+  App.swift:15
+  
+  How do I fix the force-unwrap?
+context: |
+  let name = user.name!
+notes: >
+  Replace force unwrap with guard/if let.

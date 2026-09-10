@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: fix-006
+category: fix
+prompt: |
+  error[E0502]: cannot borrow `*map` as mutable because it is also borrowed as immutable
+    --> src/main.rs:20:5
+     |
+  18 |     let v = map.get(&key);
+     |             --- immutable borrow occurs here
+  20 |     map.insert(key, 1);
+     |     ^^^ mutable borrow
+  
+  How do I fix this?
+notes: >
+  Classic Rust simultaneous borrow.

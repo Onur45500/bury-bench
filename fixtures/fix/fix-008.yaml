@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: fix-008
+category: fix
+prompt: |
+  My `.btn-primary { color: white }` rule is not applying.
+  DevTools shows a more specific selector winning: `nav .btn.btn-primary { color: blue }`.
+  
+  How do I fix this without !important?
+notes: >
+  CSS specificity — match or raise specificity.

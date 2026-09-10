@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+
+id: fix-004
+category: fix
+prompt: |
+  File "report.py", line 10
+      print(f"Total: {count")
+                           ^
+  SyntaxError: f-string: expecting '}'
+
+  What's the fix?
+notes: >
+  Unclosed brace in f-string.

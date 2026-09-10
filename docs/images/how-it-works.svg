@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" role="img" aria-labelledby="title desc">
+  <title id="title">How bury-bench works</title>
+  <desc id="desc">Flow from transcript or fixture through deterministic rules to an action score and leaderboard.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="960" height="220" rx="16" fill="url(#bg)"/>
+  <text x="32" y="36" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">How bury-bench works</text>
+  <text x="32" y="56" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12">Zero LLM judges - regex, structure checks, and heuristics only</text>
+
+  <rect x="32" y="84" width="170" height="88" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="117" y="118" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Input</text>
+  <text x="117" y="140" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">fixture YAML</text>
+  <text x="117" y="156" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">or chat transcript</text>
+
+  <line x1="202" y1="128" x2="248" y2="128" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="250" y="84" width="170" height="88" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+  <text x="335" y="118" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="600">13 rules</text>
+  <text x="335" y="140" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">passed / failed / N/A</text>
+  <text x="335" y="156" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">+ evidence spans</text>
+
+  <line x1="420" y1="128" x2="466" y2="128" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="468" y="84" width="170" height="88" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+  <text x="553" y="118" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Action score</text>
+  <text x="553" y="140" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">0-100 - higher = better</text>
+  <text x="553" y="156" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">weighted pass / applicable</text>
+
+  <line x1="638" y1="128" x2="684" y2="128" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="686" y="84" width="242" height="88" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="807" y="118" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Leaderboard</text>
+  <text x="807" y="140" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Markdown table by model</text>
+  <text x="807" y="156" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">overall + per-category</text>
+
+  <text x="32" y="204" fill="#64748b" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Same input = same score every time. No model is called to grade another model.</text>
+</svg>

@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: fix-mt-001
+category: fix
+turns:
+  - role: user
+    content: |
+      mypy: Item "None" of "User | None" has no attribute "email"
+  - role: assistant
+    content: |
+      Step 1 of 2 done: added None guard in `src/handlers.py`.
+      Next: rerun mypy.
+prompt: |
+  mypy is clean — wrap up
+notes: >
+  Visible win after type fix.

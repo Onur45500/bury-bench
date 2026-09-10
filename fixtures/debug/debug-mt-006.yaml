@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: debug-mt-006
+category: debug
+turns:
+  - role: user
+    content: Hydration mismatch on HomePage.
+  - role: assistant
+    content: |
+      Step 1 of 3 done: found server rendered "Loading..." vs client welcome.
+prompt: |
+  what's the fix?
+notes: >
+  SSR mismatch continuation with state.

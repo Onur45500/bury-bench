@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+# Fixture licensed under MIT. Part of bury-bench.
+id: install-013
+category: install
+prompt: |
+  How do I install pnpm and enable corepack on Node 20?
+notes: >
+  Extra V2 corpus fixture.
