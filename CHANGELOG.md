@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `no_hedge_filler`: hybrid gate (density **or** opening cluster/spam); short single hedge allowed; diagnostic-sentence allowlist
 - `restate_state`: state card with commands, checklist items, progress paraphrases; empty-continuer fail; artifact can satisfy without echoing step id
 - Expanded golden set for the hedge/restate failure modes
+- CI: pin GitHub Actions to commit SHAs; add Dependabot; add `requirements*.txt` lockfiles (HOL plugin-scanner trust)
 
 ## [0.2.0] - 2026-09-10
 

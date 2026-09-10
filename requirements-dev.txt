@@ -1,0 +1,14 @@
+# Locked install set for CI / local verification (runtime + providers + tests).
+-r requirements.txt
+httpx==0.27.2
+httpcore==1.0.7
+anyio==4.14.2
+idna==3.18
+certifi==2024.12.14
+h11==0.14.0
+sniffio==1.3.1
+pytest==9.1.1
+iniconfig==2.3.0
+packaging==24.2
+pluggy==1.6.0
+colorama==0.4.6
