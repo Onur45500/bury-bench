@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+id: golden-restate-artifact-not-step
+ruleset: adhd-v2
+turns:
+  - role: assistant
+    content: |
+      Step 2 of 4 done: patched `src/auth.ts`.
+response: |
+  Continue from `src/auth.ts`. Run the auth suite.
+expected:
+  restate_state: passed
+notes: >
+  Artifact overlap can satisfy restatement even without echoing Step N of M.

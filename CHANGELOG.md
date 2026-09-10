@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Open-source docs: CONTRIBUTING, CODE_OF_CONDUCT, SECURITY, issue/PR templates
 - README diagrams under `docs/images/`
 
+### Changed
+
+- `no_hedge_filler`: hybrid gate (density **or** opening cluster/spam); short single hedge allowed; diagnostic-sentence allowlist
+- `restate_state`: state card with commands, checklist items, progress paraphrases; empty-continuer fail; artifact can satisfy without echoing step id
+- Expanded golden set for the hedge/restate failure modes
+
 ## [0.2.0] - 2026-09-10
 
 ### Added

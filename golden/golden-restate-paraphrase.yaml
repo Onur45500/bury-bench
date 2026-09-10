@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+id: golden-restate-paraphrase
+ruleset: adhd-v2
+turns:
+  - role: assistant
+    content: |
+      Schema updated. Ready for the backfill script.
+response: |
+  Migration applied on staging. Run `python backfill.py`.
+expected:
+  restate_state: passed
+notes: >
+  Known progress paraphrase pair (schema updated <-> migration applied).

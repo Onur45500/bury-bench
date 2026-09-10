@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+id: golden-hedge-opening-cluster
+ruleset: adhd-v2
+response: |
+  This might be the wrong host. Perhaps the proxy dropped the header.
+  Then there is a long explanation of networking, retries, DNS, TLS,
+  load balancers, and timeout tuning with many words of detail detail
+  detail detail detail detail detail detail detail detail detail detail
+  detail detail detail detail detail detail detail detail detail detail
+  detail detail detail detail detail detail detail detail detail detail.
+expected:
+  no_hedge_filler: failed
+notes: >
+  Long body keeps density low; opening hedge cluster must still fail.

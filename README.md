@@ -220,9 +220,9 @@ bury-bench check-golden
 |------|-------------------|
 | `action_first` | Finite imperative list |
 | `one_next_action` | Soft closes fail; closed forms are N/A |
-| `restate_state` | Needs step markers / path-like tokens |
+| `restate_state` | State card = steps, artifacts, commands, checklist, known paraphrases |
 | `visible_wins` | Phrase lists for claims / buried recaps |
-| `no_hedge_filler` | Density ≠ “real” uncertainty |
+| `no_hedge_filler` | Density **or** opening hedge cluster; short single hedge allowed |
 
 ## Contributing
 

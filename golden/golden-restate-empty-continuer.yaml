@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+id: golden-restate-empty-continuer
+ruleset: adhd-v2
+turns:
+  - role: assistant
+    content: |
+      Step 2 of 4 done: schema updated in `migrations/002.sql`.
+response: |
+  ok next
+expected:
+  restate_state: failed
+notes: >
+  Pure continuer with prior state must fail.

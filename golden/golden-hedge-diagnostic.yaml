@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT
+id: golden-hedge-diagnostic
+ruleset: adhd-v2
+response: |
+  Root cause is unclear. It might be the cache, unknown until we see the next trace.
+  Run `pytest -k cache` and paste the failure.
+expected:
+  no_hedge_filler: passed
+notes: >
+  Hedge inside a diagnostic template is not counted.

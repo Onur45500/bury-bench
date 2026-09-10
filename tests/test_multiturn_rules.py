@@ -77,6 +77,47 @@ def test_restate_state_fail_missing_artifact() -> None:
     assert result.status == RuleStatus.FAILED
 
 
+def test_restate_state_pass_command_overlap() -> None:
+    prior = "Fixed the suite hook. Run `pytest tests/test_auth.py` next."
+    response = "Auth green. Re-run `pytest tests/test_auth.py` to confirm."
+    result = RestateStateRule().check(response, context=_ctx(response, prior=prior))
+    assert result.status == RuleStatus.PASSED
+
+
+def test_restate_state_pass_checklist_overlap() -> None:
+    prior = """Progress:
+- [x] schema updated
+- [ ] backfill rows
+Next: backfill.
+"""
+    response = "Schema updated is done. Next: backfill the rows."
+    result = RestateStateRule().check(response, context=_ctx(response, prior=prior))
+    assert result.status == RuleStatus.PASSED
+
+
+def test_restate_state_pass_paraphrase() -> None:
+    prior = "Schema updated. Ready for the backfill script."
+    response = "Migration applied on staging. Run `python backfill.py`."
+    result = RestateStateRule().check(response, context=_ctx(response, prior=prior))
+    assert result.status == RuleStatus.PASSED
+
+
+def test_restate_state_fail_empty_continuer() -> None:
+    prior = "Step 2 of 4 done: schema updated in `migrations/002.sql`."
+    response = "ok next"
+    result = RestateStateRule().check(response, context=_ctx(response, prior=prior))
+    assert result.status == RuleStatus.FAILED
+    assert "continuer" in (result.evidence or "")
+
+
+def test_restate_state_pass_artifact_without_echoing_step() -> None:
+    # Step present in prior, but restating the artifact is enough
+    prior = "Step 2 of 4 done: patched `src/auth.ts`."
+    response = "Continue from `src/auth.ts`. Run the auth suite."
+    result = RestateStateRule().check(response, context=_ctx(response, prior=prior))
+    assert result.status == RuleStatus.PASSED
+
+
 # --- visible_wins ---
 
 

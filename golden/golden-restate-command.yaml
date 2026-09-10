@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT
+id: golden-restate-command
+ruleset: adhd-v2
+turns:
+  - role: assistant
+    content: |
+      Fixed the suite hook. Run `pytest tests/test_auth.py` next.
+response: |
+  Auth green. Re-run `pytest tests/test_auth.py` to confirm.
+expected:
+  restate_state: passed
+notes: >
+  Command overlap restates prior state without Step N of M.

@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: MIT
+id: golden-hedge-short-honest
+ruleset: adhd-v2
+response: |
+  This might be a race. Paste the next failing log line.
+expected:
+  no_hedge_filler: passed
+notes: >
+  Single short honest hedge should pass.

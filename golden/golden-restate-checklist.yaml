@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT
+id: golden-restate-checklist
+ruleset: adhd-v2
+turns:
+  - role: assistant
+    content: |
+      Progress:
+      - [x] schema updated
+      - [ ] backfill rows
+response: |
+  Schema updated is done. Next: backfill the rows.
+expected:
+  restate_state: passed
+notes: >
+  Checklist item tokens count as restatable state.

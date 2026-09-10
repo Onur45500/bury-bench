@@ -313,7 +313,7 @@ def test_no_hedge_pass_clean() -> None:
 
 
 def test_no_hedge_pass_sparse() -> None:
-    # One hedge in a long enough response stays under the density threshold
+    # One hedge late in a long response stays under the density threshold
     words = " ".join(["word"] * 150)
     text = f"The root cause is a missing import. {words} It might need a restart."
     assert NoHedgeFillerRule().check(text).status == RuleStatus.PASSED
@@ -327,6 +327,31 @@ def test_no_hedge_fail_dense() -> None:
     result = NoHedgeFillerRule().check(text)
     assert result.status == RuleStatus.FAILED
     assert result.evidence
+
+
+def test_no_hedge_fail_opening_cluster_in_long_reply() -> None:
+    # Density can look fine if the body is long — opening cluster must still fail
+    pad = " ".join(["detail"] * 200)
+    text = (
+        f"This might be the wrong host. Perhaps the proxy is misconfigured. {pad}"
+    )
+    result = NoHedgeFillerRule().check(text)
+    assert result.status == RuleStatus.FAILED
+    assert "opening" in (result.evidence or "")
+
+
+def test_no_hedge_pass_short_honest_single() -> None:
+    text = "This might be a race. Paste the next failing log line."
+    assert NoHedgeFillerRule().check(text).status == RuleStatus.PASSED
+
+
+def test_no_hedge_pass_diagnostic_allowlist() -> None:
+    text = (
+        "Root cause is unclear. It might be the cache, unknown until we see "
+        "the next trace. Run `pytest -k cache` and paste the failure."
+    )
+    # "might" sits in a diagnostic sentence → not counted; remaining clean
+    assert NoHedgeFillerRule().check(text).status == RuleStatus.PASSED
 
 
 def test_no_hedge_ignores_code() -> None:
